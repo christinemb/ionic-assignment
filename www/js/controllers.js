@@ -10,7 +10,7 @@ angular.module('cavamenu.controllers', [])
   dishes = [
     [
 	
-     "icecream",
+    "icecream",
       "crisps",
       "chocolate", 
 	  "toffee",
