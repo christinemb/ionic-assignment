@@ -1,11 +1,11 @@
 angular.module('cavamenu.controllers', [])
 
 .controller('AppCtrl', function($scope) {
-  $scope.categories = ['Snacks', 'Fruit', 'Vegetables', 'Meats']
+  $scope.categories = ['Snacks', 'Fruit', 'Vegetables', 'Meats', 'Breads']
 })
 
 .controller('DishesCtrl', function($scope, $stateParams) {
-  categories = ['Snacks', 'Fruit', 'Vegetables', 'Meats'];
+  categories = ['Snacks', 'Fruit', 'Vegetables', 'Meats', 'Breads'];
 
   dishes = [
     [
@@ -54,7 +54,14 @@ angular.module('cavamenu.controllers', [])
       "Chorizo",
       "MeatBalls",
       "Sausages",
-      
+      ],
+	  [
+	  "Brown Bread",
+	  "Wholemeal Bread",
+	  "Ciabatta",
+	  "White Slice Bread",
+	  "Tortilla Wraps",
+	  "Pitta Pockets",
    ]
   ];
   
