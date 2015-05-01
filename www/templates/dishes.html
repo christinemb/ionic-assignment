@@ -1,17 +1,272 @@
-<ion-view view-title="{{ category }}">
-   <ion-content>
-   
-
-   <ion-list>
-
-     <ion-item ng-repeat="dish in dishes">
-     
-        {{ dish }}
+<ion-view view-title="Dishes" > 
+  	 
+	 <!--Each list item is a button when pressed in increments the total by the value indicated.-->
+	 
+	 <ion-content>
+	 
+		<ion-list ng-if="dishesId == 1">
 		
-      </ion-item>
-
-
-
-    </ion-list>
-  </ion-content>
+ 
+			<ion-item>
+				<div class="list card"> 	<!-- creates a card , this is the same for each food item-->
+					<a class="item item-avatar" "button button-royal" onclick="incDec('+95')" href="#"> <!-- adds a picture, and button that increments when pressed , same for each card-->
+						<img src="img/apple.jpg"> <!-- locates image-->
+							<h2>Apple</h2> <!--item title-->
+								<p>95 Calories per Apple</p> <!-- displays calorie content-->
+					</a>
+						<div class="item item-text-wrap"> Recommended to eat 5 servings per day. </div> <!-- displays description this is the same for each food item-->
+				
+				</div>
+			</ion-item>
+	   
+	  
+			<ion-item>
+				<div class="list card"> 
+					<a class="item item-avatar" "button button-royal" onclick="incDec('+105')" href="#">
+						<img src="img/oranges.jpg">
+							<h2>Orange</h2>  <!-- this does not display  on my phone ,so  I replaced with a link to a picture instead of my www/images file -->
+								<p>105 Calories</p> 
+					</a>
+									<div class="item item-text-wrap"> Eat your 5 a day. </div>
+				</div>
+			</ion-item>
+		
+			<ion-item>
+				<div class="list card">
+					<a class="item item-avatar" "button button-royal" onclick="incDec('+90')" href="#">
+						<img src="img/banana.jpg">
+							<h2>Banana</h2>
+								<p>90 Calories</p></a>
+									<div class="item item-text-wrap"> Eat your 5 a day </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card">
+					<a class="item item-avatar" "button button-royal" onclick="incDec('+105')" href="#">
+						<img src="img/grapes.jpg">
+							<h2>Grapes</h2>
+								<p>105 Calories per portion</p>  </a>
+									<div class="item item-text-wrap"> Eat your five a day </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card">
+					<a class="item item-avatar" "button button-royal" onclick="incDec('+45')" href="#">
+						<img src="img/mushrooms.jpg">
+							<h2> Mushrooms </h2> 
+								<p>45 Calories </p>  </a>
+									<div class="item item-text-wrap"> Recommended to eat 5 a day. </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+64')" href="#">
+					<img src="img/pepper.jpg">
+						<h2> Peppers </h2>
+							<p>64 Calories</p>  </a>
+								<div class="item item-text-wrap"> Recommended to eat 5 a day. </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+49')" href="#">
+					<img src="img/potatoes.jpg">
+						<h2> Potatoes </h2>
+							<p>49 Calories  </p>  </a>
+								<div class="item item-text-wrap"> Recommended to eat 5 a day </div>
+				</div>
+			</ion-item>
+		  
+		  
+		</ion-list>
+	
+		    
+		<ion-list ng-if="dishesId == 2">
+		 
+					
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+214')" href="#">
+					<img src="img/mince.jpg">
+						<h2> Mince Meat </h2>
+							<p> 214 Calories </p>  </a>
+								<div class="item item-text-wrap"> Have no more than 3 servings a day </div>
+				</div>
+			</ion-item>
+		  
+		    <ion-item>
+			
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+219')" href="#">
+					<img src="img/chicken.jpg">
+						<h2>Chicken </h2>
+							<p> 219 Calories </p>  </a>
+								<div class="item item-text-wrap"> Have no more than 3 servings a day </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+301')" href="#">
+					<img src="img/sausages.jpg">
+						<h2>Sausages </h2>
+							<p> 301 Calories </p>  </a>
+								<div class="item item-text-wrap">  Have no more than 3 servings a day </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+145')" href="#">
+					<img src="img/pork.jpg">
+						<h2>Pork </h2>
+							<p> 145 Calories </p>  </a>
+								<div class="item item-text-wrap"> Have no more than 3 servings a day </div>
+				</div>
+			</ion-item>
+		  
+		</ion-list>
+		  
+	
+		<ion-list ng-if="dishesId == 3">
+		
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+80')" href="#">
+					<img src="img/wholemealbread.jpg">
+						<h2> Wholemeal Bread </h2>
+							<p> 80 Calories  per slice </p>  </a>
+								<div class="item item-text-wrap">  Maximum of 11 servings per day. </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+133')" href="#">
+					<img src="img/whitebread.jpg">
+						<h2> WhiteBread </h2>
+							<p> 133 Calories per slice </p>  </a>
+								<div class="item item-text-wrap">  Maximum of 11 servings per day.  </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+131')" href="#">
+					<img src="img/ciabatta.jpg">
+						<h2> Ciabatta </h2>
+							<p> 131 Calories </p>  </a>
+								<div class="item item-text-wrap">  Maximum of 11 servings per day. </div>
+				</div>
+			</ion-item>
+		
+		  
+		   <ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+275')" href="#">
+					<img src="img/pitta.jpg">
+						<h2> Pitta </h2>
+							<p> 275 Calories </p>  </a>
+								<div class="item item-text-wrap">  Maximum of 11 servings per day </div>
+				</div>
+			</ion-item>
+			
+		</ion-list>
+		
+		  
+		<ion-list ng-if="dishesId == 4">
+	  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+120')" href="#">
+					<img src="img/beer.jpg">
+						<h2>  Beer </h2>
+							<p> 120 Calories </p>  </a>
+								<div class="item item-text-wrap">  Drink in moderation </div>
+				</div>
+			</ion-item>
+		  
+		  
+		   <ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+80')" href="#">
+					<img src="img/wine.jpg">
+						<h2> Wine </h2>
+							<p> 80 Calories  </p>  </a>
+								<div class="item item-text-wrap">  Drink in moderation </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+56')" href="#">
+					<img src="img/orangejuice.jpg">
+						<h2> Orange Juice </h2>
+							<p> 56 Calories  </p>  </a>
+								<div class="item item-text-wrap"> Could be one of your 5 a day </div>
+				</div>
+			</ion-item>
+		  
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+46')" href="#">
+					<img src="img/coffee.jpg">
+						<h2> Coffee </h2>
+							<p> 46 Calories </p>  </a>
+								<div class="item item-text-wrap"> Hot Drinks </div>
+				</div>
+			</ion-item>
+		</ion-list>
+		
+		
+	
+		 <ion-list ng-if="dishesId == 5">
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+190')" href="#">
+					<img src="img/icecream.jpg">
+						<h2> Ice cream </h2>
+							<p> 190 Calories </p>  </a>
+								<div class="item item-text-wrap">   Eat in Moderation </div>
+				</div>
+			</ion-item>
+		
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+220')" href="#">
+					<img src="img/chocolate.jpg">
+						<h2> Chocolate </h2>
+							<p> 220 Calories </p>  </a>
+								<div class="item item-text-wrap">  Eat Moderation </div>
+				</div>
+			</ion-item>
+		  
+		
+			<ion-item>
+				<div class="list card"> <a class="item item-avatar" "button button-royal" onclick="incDec('+180')" href="#">
+					<img src="img/toffee.jpg">
+						<h2> Toffee </h2>
+							<p> 180 Calories </p>  </a>
+								<div class="item item-text-wrap">  Eat Moderation </div>
+				</div>
+			</ion-item>
+			
+		</ion-list>	
+			
+	
+		 <ion-list ng-if="dishesId == 6">
+			<ion-item><p> Total Daily Intake </p>   <!--The reset button and add functions are based on the roll dice app -->
+			<div>
+				<center>
+					<h1>
+						<div id="dailyTotal">  <!--Starts at 0 is incremented when food icon is pressed-->
+							0
+						</div>
+					</h1>
+				</center>
+			</div>
+			
+			<div>
+				<center>
+	  					<button class="button button-small button-royal" onclick="reset()">
+							Reset
+						</button>
+				</center>
+			</div>
+			</ion-item>
+		</ion-list>
+		
+		
+		
+	</ion-content>
+	  
 </ion-view>
+
