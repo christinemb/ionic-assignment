@@ -1,3 +1,4 @@
+
 angular.module('cavamenu.controllers', [])
 
 .controller('AppCtrl', function($scope) {
@@ -9,6 +10,7 @@ angular.module('cavamenu.controllers', [])
 
   dishes = [
     [
+	
     "icecream",
       "crisps",
       "chocolate", 
@@ -19,7 +21,8 @@ angular.module('cavamenu.controllers', [])
       "Apples",
       "Oranges",
       "Bananas",
-      "Grapes",     
+      "Grapes",
+      
    ],
    [
       "Potatoes",
@@ -27,12 +30,13 @@ angular.module('cavamenu.controllers', [])
       "Peppers",
       "Parsnips",
       "Onions",
+      
+      
     ],
     [
       "Mince meat",
+      "Beef burgers",
       "Chicken Breast",
-      "Sirloin Steak",
-      "Rashers",
       "Sausages",
       ],
 	  [
@@ -40,6 +44,8 @@ angular.module('cavamenu.controllers', [])
 	  "Wholemeal Bread",
 	  "Ciabatta",
 	  "White Slice Bread",
+	  "Tortilla Wraps",
+	  "Pitta Pockets",
 	  ],
 	  [
 	  "Bottled Beer",
