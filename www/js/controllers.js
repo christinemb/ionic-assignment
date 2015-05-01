@@ -20,7 +20,7 @@ angular.module('cavamenu.controllers', [])
     [
       "Apples",
       "Oranges",
-      "Bananas",
+      "Banana",
       "Grapes",
       
    ],
@@ -37,6 +37,7 @@ angular.module('cavamenu.controllers', [])
       "Mince meat",
       "Beef burgers",
       "Chicken Breast",
+      
       "Sausages",
       ],
 	  [
