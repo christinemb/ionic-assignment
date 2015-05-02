@@ -19,7 +19,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   });
-
+// sends any invalid url back to its default url dishes/1
    $urlRouterProvider.otherwise('/app/dishes/1');
 });
 

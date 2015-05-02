@@ -1,5 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
 	<ion-side-menu-content>
+	<!--creates a navigation bar on the left hand side of app, pressing the bar will show various food groups-->
 		<ion-nav-bar class="bar-positive"> <!--making headers blue-->
 		<ion-footer-bar align-title="left" class="bar-positive">
    
@@ -12,13 +13,15 @@
 					</button>
 				</ion-nav-buttons>
 		</ion-nav-bar>
+		
+		<!-- nav view shows the states in the application and shows which food category we are currently looking at-->
     </ion-footer-bar>
 		<ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
 		<ion-header-bar class="bar-positive"> <!--sets header bar as blue-->
-			<h1 class="title">Food</h1> 
+			<h1 class="title">Food</h1>  <!--title of side menu and list-->
     </ion-header-bar>
 		</ion-header-bar>
    <ion-footer-bar align-title="left" class="bar-positive">
@@ -46,7 +49,7 @@
 			</ion-item>
 		
 			<ion-item nav-clear menu-close href="#/app/dishes/6"> <!-- links to the total calories consumed -->
-				Total
+				Total Daily Intake
 		
 			</ion-item>
 			
