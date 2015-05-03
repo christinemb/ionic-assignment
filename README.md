@@ -12,6 +12,8 @@ The calorie app uses a sidemenu template and the foods are contained in the dish
 Click on the food and the calories for that food is kept in the total daily intake, each time a food is clicked, they are added to the total and the amount of 
 calories consumed that day is displayed in the total daily intake section. Press reset to go back to zero.
 
+If the first time you click on a food it doesn't work, go back to the recommended daily intake and press reset, then press on food again, it works.
+
 All the images were obtained from public sources.
 
 The project is available on github : https://github.com/christinemb/ionic-assignment.
