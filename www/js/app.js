@@ -15,7 +15,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: "templates/dishes.html",
-        controller: 'DishesCtrl'
+        controller: 'DishesCtrl'// the url that shows in the address bar
       }
     }
   });
